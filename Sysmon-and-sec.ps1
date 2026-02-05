@@ -79,20 +79,3 @@ Set-AuditSubcategory "Other Object Access Events"    enable disable
 
 Write-Host "Sysmon + other stuff."
 
-
-# 5140 and 5145
-Enable-Audit "File Share" enable enable
-Enable-Audit "Detailed File Share" enable enable
-
-# 4648 
-Enable-Audit "Other Logon/Logoff Events" enable enable
-
-# 5156 and 5158
-Enable-Audit "Filtering Platform Connection" enable disable
-
-# 4697 b
-Enable-Audit "Security System Extension" enable enable
-
-Enable-Audit "Other Object Access Events" enable enable
-
-Write-Host "Done Sysmon + other good stuff."
